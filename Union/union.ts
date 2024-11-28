@@ -27,5 +27,5 @@ function getDBId(id: number | string){
 }
 getDBId(1)
 getDBId("2")
-// wrong
+// wrong 
 // getDBId(true)
