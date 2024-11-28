@@ -10,13 +10,40 @@
 
 
 class User {
+
+    private _courseCount = 1
+
     private readonly city: string = ""
     constructor(
         public email: string,
         public name: string
-    ) {}
+    ) { }
+
+    private deleteToken() {
+        console.log("deleteToken")
+    }
+
+    // Getter Methods
+    get getAppleEmail(): string {
+        return this.email
+    }
+
+    // Getter Methods
+    get courseCount(): number {
+        return this._courseCount
+    }
+
+    // Setter Methods
+    set courseCount(courseNum) {
+        if (courseNum < 1) {
+            throw new Error("Count must be greater than 1")
+        }
+        this._courseCount = courseNum
+    }
+
 }
 
 const rakesh = new User('rakesh@gmail.com', 'rakesh')
+
 
 
