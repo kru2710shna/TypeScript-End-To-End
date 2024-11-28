@@ -13,7 +13,10 @@ createUseer(newUser);
 function createCourse() {
     return { name: 'person1', price: 122 };
 }
-function createUser(user) {
-    return { name: "", email: "", isActive: false };
-}
-createUser({ name: 'hello1', email: 'hello@example.com', isActive: false });
+var myUser = {
+    _id: "12234",
+    name: "g",
+    email: "g@example.com",
+    isActive: true,
+};
+myUser.email = "g1@example.com";
