@@ -70,4 +70,6 @@ type cardDate = {
 type cardDetails = cardNumber & cardDate & {
     cvv: number
 }
+
+
 export { }
