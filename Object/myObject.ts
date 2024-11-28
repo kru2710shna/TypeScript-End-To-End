@@ -13,4 +13,28 @@ function createCourse(): { name: string, price: number } {
 }
 
 
+
+
+
+
+
+
+
+
+// If want to to use same time more than once 
+// type 
+type User = {
+    name: string,
+    email: string,
+    isActive: boolean
+}
+
+function createUser(user:User): User {
+    return {name: "", email: "", isActive: false}
+}
+
+
+createUser({ name: 'hello1', email: 'hello@example.com', isActive: false   });
+
+
 export { }
