@@ -45,8 +45,8 @@ class User {
 
 class SubUser extends User {
 
-    ifFamily: boolean= true
-    changeCourseCount(){
+    ifFamily: boolean = true
+    changeCourseCount() {
         this._courseCount = 4
     }
 
